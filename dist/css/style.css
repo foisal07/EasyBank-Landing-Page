@@ -213,4 +213,8 @@ button, .button {
   height: 100vh;
   background-image: linear-gradient(#2d314d, transparent);
 }
+
+.hero {
+  background-color: #fafafa;
+}
 /*# sourceMappingURL=style.css.map */
