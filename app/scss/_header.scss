@@ -86,6 +86,39 @@
     }
   }
 
+  .mobile__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $lightGrayishBlue;
+    position: absolute;
+    border-radius: 5px;
+    z-index: 5;
+    margin-top: 5%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 1.5625rem;
+    width: 300px;
+    visibility: hidden;
+
+    li {
+     
+      &:not(:last-child){
+        margin-bottom:.875rem;
+      }
+     
+      a {
+      font-size: $font-sm;
+      color: $grayishBlue;
+      transition: color 300ms ease-in-out;
+
+        &:hover {
+          color: $darkBlue; 
+        }
+      }
+    }
+  }
+
   .overlay {
     position: fixed;
     visibility: hidden;
