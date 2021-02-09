@@ -1,11 +1,42 @@
 .hero {
   background-color: $veryLightGray;
-  
-  &__image{
-      
+
+  &__image {
+    position: relative;
+    background-image: url(/images/bg-intro-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    min-height: 20.75rem;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url(/images/image-mockups.png);
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      background-size: cover;
+      left: 2%;
+      width: 96%;
+      height: 100%;
+    }
   }
 
-  &__text{
- 
+  &__text {
+    text-align: center;
+
+    h1 {
+      font-size: $font-lrg;
+      font-weight: 300;
+      color: $darkBlue;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+
+    p{
+      line-height: 1.5;
+      margin-bottom: 2.25rem;
+    }
   }
 }
