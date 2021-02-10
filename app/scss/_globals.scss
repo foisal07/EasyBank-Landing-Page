@@ -18,6 +18,8 @@ body{
 }
 
 h1,h2,h3 {
+  font-weight: 300;
+  color: $darkBlue;
   margin-top: 0;
 }
 
@@ -27,6 +29,12 @@ a, a:visited, a:hover {
 
 li {
   list-style: none;
+}
+
+p{
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
 }
 
 //Spacing

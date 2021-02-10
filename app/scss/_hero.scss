@@ -59,11 +59,19 @@
       width: 92%;
       height: 101%;
 
+      @include breakpoint-up (medium) {
+        left: 20%;
+        width: 60%;
+        height: 110%;
+      }
+      
       @include breakpoint-up (large){
         left: 22.5%;
         width: 120%;
         height: 122%;
       }
+
+      
     }
   }
 

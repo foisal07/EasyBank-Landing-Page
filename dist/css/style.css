@@ -34,6 +34,58 @@
   animation: fade-out 300ms ease-in-out forwards;
 }
 
+.section__heading {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  max-width: 40.93rem;
+}
+
+@media (max-width: 63.9375em) {
+  .section__heading {
+    position: relative;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.section__heading h2 {
+  font-size: 2rem;
+}
+
+@media (min-width: 40em) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.875rem;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 64em) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.875rem;
+  }
+}
+
+.grid__item {
+  padding: 1rem 0 1rem 0;
+}
+
+@media (max-width: 63.9375em) {
+  .grid__item {
+    text-align: center;
+    padding: 1.5rem 0 1rem 0;
+  }
+}
+
+.grid__item h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -47,13 +99,15 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Public Sans', sans-serif;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 300;
   color: #9698a6;
   line-height: 1.3;
 }
 
 h1, h2, h3 {
+  font-weight: 300;
+  color: #2d314d;
   margin-top: 0;
 }
 
@@ -63,6 +117,12 @@ a, a:visited, a:hover {
 
 li {
   list-style: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
 }
 
 .container {
@@ -318,6 +378,14 @@ button:hover, .button:hover {
   height: 101%;
 }
 
+@media (min-width: 40em) {
+  .hero__image::after {
+    left: 20%;
+    width: 60%;
+    height: 110%;
+  }
+}
+
 @media (min-width: 64em) {
   .hero__image::after {
     left: 22.5%;
@@ -339,7 +407,7 @@ button:hover, .button:hover {
 }
 
 .hero__text h1 {
-  font-size: 2.31rem;
+  font-size: 2rem;
   font-weight: 300;
   color: #2d314d;
   line-height: 1.2;
@@ -353,8 +421,27 @@ button:hover, .button:hover {
 }
 
 .hero__text p {
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 2.25rem;
+}
+
+.features {
+  background-color: #f3f4f6;
+}
+
+.article {
+  background-color: #fafafa;
+}
+
+.article__card {
+  background-color: white;
+  max-width: 240px;
+  min-height: 200px;
+}
+
+.article__card img {
+  max-width: 100%;
+  min-height: 100%;
 }
 /*# sourceMappingURL=style.css.map */

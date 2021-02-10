@@ -1,0 +1,15 @@
+.article {
+  background-color: $veryLightGray;
+
+  &__card {
+    background-color: $white;
+    max-width: 240px;
+    min-height: 200px;
+
+    img {
+      max-width: 100%;
+      min-height: 100%;
+    }
+    
+  }
+}
