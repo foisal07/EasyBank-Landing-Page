@@ -6,6 +6,7 @@
       display: grid;
       grid-template-columns: 1.5fr 2fr;
       grid-template-areas: 'text image';
+      height: 40.93rem;
     }
   }
  
@@ -20,15 +21,30 @@
     grid-area: image;
 
     @include breakpoint-up (large) {
-
+      background-image: none;
+      
       &::before {
-      position: absolute;
-      content: "";
-      background-image: url(/images/bg-intro-desktop.svg);
-      background-repeat: no-repeat;
-      background-position: center bottom;
-      background-size: cover;
-      width:100%;
+        position: absolute;
+        content: "";
+        background-image: url(/images/bg-intro-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: 113%;
+        width: 166%;
+        height: 111%;
+        left: 10%;
+      }
+      
+      &::after {
+        position: absolute;
+        content: "";
+        background-image: url(/images/image-mockups.png);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: cover;
+        left: 22.5%;
+        width: 120%;
+        height: 122%;
       }
     }
 
@@ -39,10 +55,15 @@
       background-repeat: no-repeat;
       background-position: center bottom;
       background-size: cover;
-      left: 2%;
-      width: 96%;
-      height: 100%; 
-      grid-area: image;
+      left: 4%;
+      width: 92%;
+      height: 101%;
+
+      @include breakpoint-up (large){
+        left: 22.5%;
+        width: 120%;
+        height: 122%;
+      }
     }
   }
 
@@ -68,7 +89,7 @@
       }
     }
 
-    p{
+    p {
       font-size: $font-med;
       line-height: 1.5;
       margin-bottom: 2.25rem;
