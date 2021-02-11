@@ -449,4 +449,49 @@ button:hover, .button:hover {
   text-align: left;
   padding: 1.8rem;
 }
+
+.footer {
+  background-color: #2d314d;
+}
+
+.footer__wrapper {
+  position: relative;
+  display: grid;
+  justify-content: center;
+  width: 100%;
+}
+
+.footer__logo img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 2.25rem;
+}
+
+.footer__socialIcon {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__socialIcon a:not(:last-child) {
+  padding-right: 2.1rem;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer__links a {
+  color: white;
+}
+
+.footer__links a:not(:last-child) {
+  padding-bottom: 1rem;
+}
+
+.footer__button {
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
