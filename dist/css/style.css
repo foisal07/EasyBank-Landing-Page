@@ -78,8 +78,6 @@
   .grid__item {
     text-align: center;
     margin: 1.5rem 0 1rem 0;
-    justify-content: center;
-    justify-items: center;
   }
 }
 
@@ -448,6 +446,7 @@ button:hover, .button:hover {
 }
 
 .article__card .card__text {
+  text-align: left;
   padding: 1.8rem;
 }
 /*# sourceMappingURL=style.css.map */
