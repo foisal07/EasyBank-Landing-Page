@@ -33,11 +33,13 @@
   }
 
   &__item {
-    padding: 1rem 0 1rem 0;
+    padding: 0rem 0 1rem 0;
   
     @include breakpoint-down(medium){
       text-align: center;
-      padding: 1.5rem 0 1rem 0;
+      margin: 1.5rem 0 1rem 0;
+      justify-content: center;
+      justify-items: center;
     }
     
     h3 {

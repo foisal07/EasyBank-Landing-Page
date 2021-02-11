@@ -71,13 +71,15 @@
 }
 
 .grid__item {
-  padding: 1rem 0 1rem 0;
+  padding: 0rem 0 1rem 0;
 }
 
 @media (max-width: 63.9375em) {
   .grid__item {
     text-align: center;
-    padding: 1.5rem 0 1rem 0;
+    margin: 1.5rem 0 1rem 0;
+    justify-content: center;
+    justify-items: center;
   }
 }
 
@@ -126,7 +128,7 @@ p {
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -436,12 +438,16 @@ button:hover, .button:hover {
 
 .article__card {
   background-color: white;
-  max-width: 240px;
-  min-height: 200px;
+  max-width: 35rem;
+  border-radius: 0 0 5px 5px;
 }
 
 .article__card img {
-  max-width: 100%;
-  min-height: 100%;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.article__card .card__text {
+  padding: 1.8rem;
 }
 /*# sourceMappingURL=style.css.map */
