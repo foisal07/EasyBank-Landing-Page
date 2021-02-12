@@ -10,6 +10,7 @@ html{
 body{
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
   font-family:'Public Sans', sans-serif;
   font-size: $font-med;
   font-weight: 300;
@@ -29,6 +30,10 @@ a, a:visited, a:hover {
 
 li {
   list-style: none;
+}
+
+img {
+  margin: 0;
 }
 
 p{
