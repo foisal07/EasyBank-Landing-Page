@@ -18,6 +18,7 @@
 
 
 .grid{
+  margin-bottom: 2.5rem;
 
   @include breakpoint-up (medium) {
     display: grid;

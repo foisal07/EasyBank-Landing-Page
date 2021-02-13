@@ -5,6 +5,12 @@
     background-color: $white;
     max-width: 35rem;
     border-radius: 0 0 5px 5px;
+    transition: transform 500ms ease-in-out;
+  
+    &:hover {
+      transform:scale(1.1);
+      box-shadow: 1px 1px 15px 3px #ddd;
+    }
 
     img {
       width: 100%;

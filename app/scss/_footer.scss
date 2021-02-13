@@ -8,7 +8,7 @@
 
     @include breakpoint-up (large) {
       grid-template-columns: 1fr 1fr 1fr 2fr;
-      grid-template-rows: 1fr auto;
+      grid-template-rows: 1fr 1fr;
     } 
   }
 
@@ -56,12 +56,12 @@
     display: flex;
     flex-direction: column;
     font-size: .9375rem;
-    justify-content: space-between;
+    
   
     a {
       color:$white;
       text-align: center;
-      line-height: 2.5;
+      line-height: 2.7;
       transition: color 300ms ease-in-out;
 
       @include breakpoint-up(large){
