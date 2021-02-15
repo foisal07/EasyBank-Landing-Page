@@ -49,14 +49,12 @@
     a:not(:last-child) {
       padding-right: 1.5rem;
     }
-
   }
 
   &__links {
     display: flex;
     flex-direction: column;
     font-size: .9375rem;
-    
   
     a {
       color:$white;
@@ -85,7 +83,6 @@
       }
     }
   }
-
 
   &__button{
     margin: 1.25rem 0;
